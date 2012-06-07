@@ -6,7 +6,7 @@
     <link rel='stylesheet' href='/stylesheets/style.css'/>
     <link rel='stylesheet' href='/stylesheets/bootstrap-responsive.min.css'/>
     <link rel='icon' href='images/favicon.ico'/>
-    <title>App</title>
+    <title data-bind="text: title"></title>
 <head>
 <body>
 
@@ -14,7 +14,7 @@
     <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
-                <a class="brand">App Name</a>
+                <a class="brand" data-bind="text: title"></a>
                 <div class="nav-collapse">
                     <ul class="nav">
                         <li>
@@ -23,6 +23,33 @@
                     </ul>
                 </div>
             </div>
+        </div>
+    </div>
+
+    <!--Main function-->
+    <div class="container">
+        <div class="row">
+            <form>
+                <fieldset>
+                    <legend>Search or Join Presentation</legend>
+                    <div class="control-group">
+                        <label class="control-label">ID, Presenter Name, Venue?</label>
+                        <div class="controls">
+                            <input type="text" class="input-xlarge" name="search" />
+                        </div>
+                    </div>
+
+                    <div class="control-group">
+                        <label class="control-label">OR</label>
+                    </div>
+
+                    <div class="control-group">
+                        <a class="btn btn-success" href="#"><i class="icon-map-marker icon-white"></i> Nearby</a>
+
+                    </div>
+
+                </fieldset>
+            </form>
         </div>
     </div>
 

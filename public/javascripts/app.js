@@ -1,6 +1,7 @@
 function App()  {
     var self = this;
 
+    this.title = ko.observable("Prezzy");
 
     Sammy(function() {
 
@@ -11,5 +12,5 @@ function App()  {
     }).run();
 }
 
-ko.applyBindings(app);
+ko.applyBindings(new App());
 
