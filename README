@@ -1,3 +1,5 @@
 Readme:
 -------
-Simple application bootstrap for node.js, twitter bootstrap and knockoutjs
+Simple application bootstrap for node.js, twitter bootstrap and knockoutjs.
+
+Now using HTML files instead of JADE templates :-) Good, for exploring stuff without worrying having to learn JADE syntax.
