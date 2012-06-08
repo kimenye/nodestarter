@@ -6,7 +6,7 @@
     <link rel='stylesheet' href='/stylesheets/style.css'/>
     <link rel='stylesheet' href='/stylesheets/bootstrap-responsive.min.css'/>
     <link rel='icon' href='images/favicon.ico'/>
-    <title data-bind="text: title"></title>
+    <title data-bind="html: title"></title>
 <head>
 <body>
 
@@ -31,20 +31,24 @@
         <div class="row">
             <form>
                 <fieldset>
-                    <legend>Search or Join Presentation</legend>
+                    <legend>Join Presentation</legend>
                     <div class="control-group">
-                        <label class="control-label">ID, Presenter Name, Venue?</label>
+                        <label class="control-label">Search</label>
                         <div class="controls">
-                            <input type="text" class="input-xlarge" name="search" />
+                            <div class="input-append">
+                                <input data-bind="value: searchTerm" type="text" class="input-xlarge" placeholder="" name="search" />
+                                <button class="btn" type="button">Search</button>
+                            </div>
+                            <span class="help-block">Search using the presenter's name, venue or ID if you know it</span>
                         </div>
                     </div>
 
                     <div class="control-group">
-                        <label class="control-label">OR</label>
+                        <label class="control-label">Or</label>
                     </div>
 
                     <div class="control-group">
-                        <a class="btn btn-success" href="#"><i class="icon-map-marker icon-white"></i> Nearby</a>
+                        <a class="btn btn-success" href="#"><i class="icon-map-marker icon-white"></i> Show me what's Nearby</a>
 
                     </div>
 

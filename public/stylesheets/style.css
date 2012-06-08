@@ -2,6 +2,14 @@ body {
     padding-top: 60px;
 }
 
+.input-xlarge {
+    /*height: 40px;*/
+}
+
+.help-block {
+    font-style: italic;
+}
+
 /* Tweak navbar brand link to be super sleek
 -------------------------------------------------- */
 .navbar-fixed-top .brand {
