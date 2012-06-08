@@ -6,7 +6,7 @@
     <link rel='stylesheet' href='/stylesheets/style.css'/>
     <link rel='stylesheet' href='/stylesheets/bootstrap-responsive.min.css'/>
     <link rel='icon' href='images/favicon.ico'/>
-    <title>App</title>
+    <title data-bind="html: title"></title>
 <head>
 <body>
 
@@ -14,7 +14,7 @@
     <div class="navbar navbar-fixed-top">
         <div class="navbar-inner">
             <div class="container">
-                <a class="brand">App Name</a>
+                <a class="brand" data-bind="text: title"></a>
                 <div class="nav-collapse">
                     <ul class="nav">
                         <li>
